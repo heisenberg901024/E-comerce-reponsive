@@ -1,0 +1,211 @@
+*  {
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #5f2b16
+}
+@import url(https://fonts.googleapis.com/css2?family=Cookie&family=Quicksand:wght@500&display=swap" rel="stylesheet");
+
+body {
+    margin: 0 60px;
+    background-color: #f6efdf;
+    height: 100%;
+    font-family: 'Cookie', cursive;
+    font-family: 'Quicksand', sans-serif;
+    padding-left: 100;
+
+}
+
+header {
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+header ul, a {
+    color: #5f2b16
+}
+.rowpic {
+    position: relative;
+    height: 30px; /* Altura deseada */
+    width: 100%; /* Para que se ajuste al ancho de la página */
+    background-image: url("cookiel.jpg");
+    background-repeat: repeat-x; 
+    background-size: contain; 
+
+  }
+  
+hr {
+    width: 100%;
+   height: 12px;
+   background-color: #5f2b16;
+   border-radius: 5%;
+}
+section{
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.navbar {
+    width: 250px;
+}
+
+header img{
+    height: 32px;
+    width: 32px;
+}
+picture img{
+    position: relative;
+    width: 120px;
+    height: auto;
+
+}
+
+.hamburguer {
+    display: none;
+}
+.navlink {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+main {
+    margin-top: 32px;
+    width: 100%;
+    height: 200%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.horneados {
+    padding-top: 32px;
+    height: 100%;  
+    justify-content: center;
+}
+
+.newdesktop {
+    height: 100%;
+    font-size: 90px;
+    position: relative;
+    padding-top: 15%;
+    padding-left: 295px;
+    background: none;
+}
+
+.newmobile {
+    display: none;
+    align-items: center;
+}
+
+.horneados span {
+    color: #f6efdf;
+}
+
+.blackbox {
+    background-color: #5f2b16;
+    height: 450px;
+    width: 335px;
+    position: absolute;
+    left: 680px;
+    border-radius: 2%;
+}
+
+.discover {
+    font-weight: bolder;
+    font-size: 30px; 
+    color: #5f2b16;  
+}
+
+.discovermobile {
+    display: none;
+}
+
+
+
+@media screen and (max-width:429px) {
+
+    body {
+        margin: 0 30px;
+        width: 100%;
+    }
+    .navbar{
+        display: none;
+    }
+
+    header {
+        width: 90%;
+    }
+    main {
+        margin-top: 64px;
+        height: 350px;
+    }
+
+    .cart{
+        display: none;
+        
+        }
+
+    header img{
+        height: 48px;
+        width: auto;
+    }
+    .rowpic {
+        position: relative;
+        height: 30px; 
+        width: 88%; 
+        background-image: url("cookiel.jpg");
+        background-repeat: repeat-x;
+        background-size: contain; 
+    
+      }
+    .hamburguer {
+        display: block;
+    }
+    .blackbox {
+        height: 50%;
+        width: 335px;
+        position: absolute;
+        left: 28px;
+        border-radius: 2%;
+    }
+    .section {
+        width: 400px;
+        height: 400px;
+        justify-content: center;
+    }
+    
+    .newdesktop {
+        display: none;
+    }
+    
+    .newmobile {
+        padding-top: 20%;
+        width: 290px;
+        display: block;
+        height: 50%;
+        font-size: 32px;
+        letter-spacing: 13px;
+        position: relative;
+        left: 12px;
+    }
+
+    .blackbox {
+        width: 220px;
+        height: 280px;
+    }
+
+    .discover {
+        display: none;
+    }
+
+    .discovermobile {
+        display: block;
+        font-weight: bolder;
+        font-size: 20px;  
+    }
+}

@@ -1,0 +1,280 @@
+*  {
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #5f2b16
+}
+@import url(https://fonts.googleapis.com/css2?family=Cookie&family=Quicksand:wght@500&display=swap" rel="stylesheet");
+
+body {
+    margin: 0 60px;
+    background-color: #f6efdf;
+    height: 100%;
+    font-family: 'Cookie', cursive;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header {
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+header ul, a {
+    color: #5f2b16
+}
+.rowpic {
+    position: relative;
+    height: 30px; /* Altura deseada */
+    width: 100%; /* Para que se ajuste al ancho de la página */
+    background-image: url("cookiel.jpg");
+    background-repeat: repeat-x;
+    background-size: contain; 
+
+  }
+  
+
+.navbar {
+    width: 250px;
+}
+
+header img{
+    height: 32px;
+    width: 32px;
+}
+picture img{
+    position: relative;
+    width: 96px;
+    height: auto;
+
+}
+
+.hamburguer {
+    display: none;
+}
+.navlink {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+
+main {
+    margin-top: 32px;
+    width: 100%;
+    position: relative;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    }
+
+.product-container {
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.product-image img {
+    border-radius: 3%;
+    max-width: 100%;
+    height: auto;
+}
+
+.product-details h1 {
+    color: #48220f;
+    font-size: 24px;
+    margin: 0;
+}
+
+.product-details h2 {
+    font-size: 16px;
+    color: #777;
+    margin: 10px 0;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.product-info-item {
+    display: flex;
+    justify-content: space-between;
+    color: ;
+}
+
+.product-info-item h3 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.weight,
+.price {
+    font-weight: bold;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    max-width: 400px;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-details h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.product-details h2 {
+    font-size: 16px;
+    color: #777;
+    margin: 10px 0;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.product-info-item h3 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.weight,
+.price {
+    font-weight: bold;
+}
+
+button.add-to-cart {
+    background-color: #5f2b16;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button.add-to-cart:hover {
+    background-color: #48220f;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 300;
+    color: black;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    font-size: 32px;
+    color: black;
+    font-weight: 400;
+}
+
+@media screen and (max-width:429px) {
+    body {
+        margin: 0 30px;
+        width: 100%;
+    }
+    .navbar{
+        display: none;
+    }
+
+    header {
+        width: 90%;
+    }
+
+    header a, p {
+        color: black;
+    }
+    hr {
+        width: 90%;
+    }
+    main {
+        margin-top: 64px;
+        height: 350px;
+    }
+
+    .cart{
+        display: none;
+    }
+
+    header img{
+        height: 48px;
+        width: 48px;
+    }
+
+    .hamburguer {
+        display: block;
+
+    }
+    .grid {
+        display: flex;
+        justify-content: center;
+        width: 320px;
+        border: #5f2b16;
+    }
+    
+    
+    h1 {
+        font-size: 16px;
+        font-weight: 700;
+        color: black;
+    }
+    
+    h3 {
+        font-size: 16px;
+        font-weight: 300;
+        color: black;
+    }
+    
+    .price {
+        display: flex;
+        align-items: center;
+    }
+    
+    h2 {
+        font-size: 32px;
+        color: black;
+        font-weight: 400;
+    }
+}
